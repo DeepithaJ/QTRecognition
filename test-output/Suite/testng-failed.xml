@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginModule(failed)">
+    <classes>
+      <class name="LoginModule.Login">
+        <methods>
+          <include name="LoginPageNavigation" invocation-numbers="0 2 3"/>
+          <include name="Bsuite"/>
+          <include name="preconditions"/>
+        </methods>
+      </class> <!-- LoginModule.Login -->
+    </classes>
+  </test> <!-- LoginModule(failed) -->
+  <test thread-count="5" name="OthersModule(failed)">
+    <classes>
+      <class name="OthersModule.kudosCount">
+        <methods>
+          <include name="CountKudos"/>
+          <include name="Bsuite"/>
+        </methods>
+      </class> <!-- OthersModule.kudosCount -->
+    </classes>
+  </test> <!-- OthersModule(failed) -->
+</suite> <!-- Failed suite [Suite] -->
